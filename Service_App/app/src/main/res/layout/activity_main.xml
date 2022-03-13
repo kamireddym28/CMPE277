@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A4E5D"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="110dp"
+        android:layout_height="120dp"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintVertical_bias="0.05"
+        app:srcCompat="@drawable/sjsu_logo"/>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PDF Download Activity"
+        android:textColor="@android:color/white"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <TextView
+        android:id="@+id/textHeading"
+        android:layout_width="375dp"
+        android:layout_height="63dp"
+        android:text="Please provide list of five SJSU PDFs to download * hardcode of files is file! or you can provide full qualified names..."
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="0.275" />
+
+    <TextView style="@style/ViewText"
+        android:id="@+id/tv2"
+        android:text="PDF1 File Location:"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <TextView style="@style/ViewText"
+        android:id="@+id/tv3"
+        android:text="PDF2 File Location:"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <TextView style="@style/ViewText"
+        android:id="@+id/tv4"
+        android:text="PDF3 File Location:"
+        app:layout_constraintVertical_bias="0.515" />
+
+    <TextView style="@style/ViewText"
+        android:id="@+id/tv5"
+        android:text="PDF4 File Location:"
+        app:layout_constraintVertical_bias="0.58" />
+
+    <TextView style="@style/ViewText"
+        android:id="@+id/tv6"
+        android:text="PDF5 File Location:"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <EditText style="@style/ViewEdit"
+        android:id="@+id/pdf1"
+        app:layout_constraintVertical_bias="0.38"/>
+
+    <EditText style="@style/ViewEdit"
+        android:id="@+id/pdf2"
+        app:layout_constraintVertical_bias="0.45"/>
+
+    <EditText style="@style/ViewEdit"
+        android:id="@+id/pdf3"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <EditText style="@style/ViewEdit"
+        android:id="@+id/pdf4"
+        app:layout_constraintVertical_bias="0.587"/>
+
+    <EditText style="@style/ViewEdit"
+        android:id="@+id/pdf5"
+        app:layout_constraintVertical_bias="0.655"/>
+
+    <Button
+        android:id="@+id/startDownload"
+        android:layout_width="225dp"
+        android:layout_height="45dp"
+        android:background="#FFFFC8"
+        android:text="Start Download"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.85" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
